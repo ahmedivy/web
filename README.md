@@ -1,2 +1,3 @@
-# web
-Repo for Web Technologies Course (SP24)
+# WEB
+
+> Repo for Web Technologies Course (SP24)
