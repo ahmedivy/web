@@ -49,3 +49,27 @@ p {
   color: var(--secondart-color);
   font-size: 0.8rem;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  max-width: 488px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+header > div > a {
+  color: var(--secondart-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  align-items: center;
+  display: inline-flex;
+  font-family: monospace;
+  justify-items: center;
+}
