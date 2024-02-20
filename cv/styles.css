@@ -40,13 +40,37 @@ p {
   font-family: monospace;
 }
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
 .location {
   display: inline-flex;
   gap: 0.375rem;
-  align-items: baseline;
+  align-items: center;
+  justify-items: center;
   line-height: 1;
   color: var(--muted-foreground);
   font-size: 0.8rem;
+}
+
+.location svg {
+  stroke: var(--muted-foreground);
+}
+
+.location span {
+  font-size: 0.8rem;
+  color: inherit;
+  font-family: inherit;
+}
+
+.location span:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -120,4 +144,10 @@ header .img-container {
   align-items: center;
   justify-content: center;
   color: black;
+}
+
+#about > h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
