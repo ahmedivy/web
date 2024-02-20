@@ -185,6 +185,41 @@ header .img-container {
   color: var(--muted-foreground);
 }
 
-.education-entry-desc {
-  font-family: monospace
+#work h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.work-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.work-entry > div {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.work-entry h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.work-entry p {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+#skills {
+  margin-bottom: 1.5rem;
+}
+
+#skills h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
