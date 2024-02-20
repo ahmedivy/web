@@ -223,3 +223,24 @@ header .img-container {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
+#skills > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  background-color: #414652;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+}
