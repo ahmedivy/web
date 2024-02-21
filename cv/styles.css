@@ -178,6 +178,10 @@ header .img-container {
   justify-content: space-between;
 }
 
+.education-entry > div > p {
+  min-width: 100px;
+}
+
 .education-entry h3 {
   font-size: 1rem;
   font-weight: bold;
