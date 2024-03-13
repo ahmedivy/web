@@ -142,6 +142,11 @@ logo {
   padding: 30px 20px;
 }
 
+.slide > svg {
+  height: 40px;
+  width: 150px;
+}
+
 .slide p {
   font-size: 1.1rem;
   font-weight: 500;
