@@ -1,6 +1,6 @@
 # WEB
 
-> Repo for Web Technologies Course (SP24)
+> Repo for Web Technologies Course (FA21-BCS-141)
 
 ### Content
 
