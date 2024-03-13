@@ -2,7 +2,7 @@
 
 * {
   --background: white;
-  --border-color: #a6a6b1;
+  --border-color: #cdcdd3;
   --text-color: #000;
   --muted-foreground: #7c7c93;
 }
@@ -69,7 +69,7 @@ logo {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 500px;
+  height: 450px;
   flex-direction: column;
   gap: 20px;
 }
@@ -119,6 +119,33 @@ logo {
   padding: 10px 20px;
 }
 
-.slides {
-  
+.slider {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 300px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slide {
+  width: 500px;
+  border: 1px solid var(--border-color);
+  border-radius: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-color);
+  max-width: 400px;
 }
