@@ -7,7 +7,7 @@ function listProjects() {
 
       var projectList = "";
       for (var i = 0; i < response.length; i++) {
-        projectList += `<div class="card">
+        projectList += `<div class="card my-3">
          <div class="card-body" id="project-${response[i]._id}">
            <h5 class="card-title
            ">${response[i].title}</h5>
@@ -18,6 +18,10 @@ function listProjects() {
               class="btn btn-danger">Delete</button>
          </div>
         </div>`;
+      }
+
+      if (response.length === 0) {
+        projectList = "No projects found";
       }
 
       $("#projectsList").html(projectList);
@@ -39,6 +43,10 @@ function addProject(event) {
     success: function (response) {
       console.log(response);
       listProjects();
+
+      // clear the form
+      $("#title").val("");
+      $("#description").val("");
     },
 
     error: function (response) {
