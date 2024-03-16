@@ -1,4 +1,5 @@
 *.py
+*.http
 
 # Logs
 logs
