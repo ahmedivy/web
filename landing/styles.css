@@ -119,6 +119,10 @@ logo {
   padding: 10px 20px;
 }
 
+.btn {
+  border-radius: 20px;
+}
+
 .slider {
   display: flex;
   gap: 20px;
@@ -143,7 +147,7 @@ logo {
 }
 
 .slide > svg {
-  height: 40px;
+  height: 50px;
   width: 150px;
 }
 
@@ -232,14 +236,8 @@ logo {
   font-weight: 500;
 }
 
-/* bg-gradient-to-b from-primary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 */
-/* .category {
-  background: linear-gradient(180deg, #3b82f6 0%, #ffffff 100%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
-
 #community {
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -312,7 +310,7 @@ logo {
 }
 
 #faq {
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -344,7 +342,7 @@ logo {
 }
 
 #contact-us {
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -365,4 +363,22 @@ logo {
   color: var(--muted-foreground);
   max-width: 700px;
   margin: 40px auto;
+}
+
+.error {
+  color: red;
+}
+
+#contactForm {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 500px;
+  width: 100%;
 }
