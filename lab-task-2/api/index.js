@@ -14,9 +14,7 @@ mongoose
   });
 
 app.use(
-  cors({
-    origin: "http://localhost:5500",
-  })
+  cors()
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
