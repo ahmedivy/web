@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/lab-task-2/api/:path*" },
+    {
+      "source": "/cv",
+      "destination": "/assign-1 (cv)"
+    }
+  ]
+}
