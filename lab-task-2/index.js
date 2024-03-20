@@ -1,6 +1,6 @@
 function listProjects() {
   $.ajax({
-    url: "http://localhost:3000/projects",
+    url: "/api/projects",
     method: "GET",
     success: function (response) {
       console.log(response);
@@ -37,7 +37,7 @@ function addProject(event) {
   console.log(title, description);
 
   $.ajax({
-    url: "http://localhost:3000/projects/",
+    url: "/api/projects/",
     method: "POST",
     data: { title, description },
     success: function (response) {
@@ -63,7 +63,7 @@ $(document).ready(function () {
   $(document).on("click", "button:contains('Edit')", function () {
     var id = $(this).data("id");
     $.ajax({
-      url: `http://localhost:3000/projects/${id}`,
+      url: `/api/projects/${id}`,
       method: "GET",
       success: function (response) {
         console.log(response);
@@ -80,7 +80,7 @@ $(document).ready(function () {
             var description = $("#updateDescription").val();
 
             $.ajax({
-              url: `http://localhost:3000/projects/${id}`,
+              url: `/api/projects/${id}`,
               method: "PUT",
               data: { title, description },
               success: function (response) {
@@ -97,7 +97,7 @@ $(document).ready(function () {
   $(document).on("click", "button:contains('Delete')", function () {
     var id = $(this).data("id");
     $.ajax({
-      url: `http://localhost:3000/projects/${id}`,
+      url: `/api/projects/${id}`,
       method: "DELETE",
       success: function (response) {
         console.log(response);
