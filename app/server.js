@@ -2,10 +2,13 @@ const express = require("express");
 const cors = require("cors");
 
 app = express();
-app.use(express.static("public"));
+app.set("views", __dirname + "/views"); // add __dirname to make it work on vercel
+app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+
+console.log(__dirname);
 
 app.set("view engine", "ejs");
 
